@@ -1,0 +1,20 @@
+.container {
+  margin-top: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+}
+
+.containerSocialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia {
+  margin: 1rem;
+}
