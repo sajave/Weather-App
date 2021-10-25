@@ -1,0 +1,77 @@
+.card {
+  width: 300px;
+  padding: 15px;
+  margin: 20px;
+
+  /* display: flex;
+    flex-direction: row; */
+
+  white-space: nowrap;
+
+  border-radius: 8px 70px 10px 100px;
+  -webkit-border-radius: 8px 70px 10px 100px;
+  -moz-border-radius: 8px 70px 10px 100px;
+
+  /*     border: 1px solid rgb(229, 240, 255);
+    border-radius: 15px; */
+  background-image: linear-gradient(#2a9fd1, #f0faff);
+
+  cursor: default;
+
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.card:hover {
+  background-image: linear-gradient(#2a9fd1, #f0faff);
+  box-shadow: 5px 5px 15px #888888;
+  opacity: 1;
+}
+
+.tempMin {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 140, 255);
+}
+
+.tempMax {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 94, 0);
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.containerTemp {
+  font-size: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonX {
+  display: flex;
+
+  font-weight: bold;
+  color: rgb(218, 218, 218);
+
+  border: 2px solid rgb(199, 0, 0);
+  border-radius: 7px;
+  background-color: rgb(180, 0, 0);
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.buttonX:hover {
+  color: rgb(180, 0, 0);
+
+  border: 2px solid rgb(255, 226, 226);
+  background-color: rgb(255, 240, 240);
+}
