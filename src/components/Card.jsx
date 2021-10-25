@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import Ciudad from "./Ciudad";
+import Ciudad from "./City";
 import styles from "./Card.module.css";
 
 export default function Card({min, max, name, img, onClose, id}) {
@@ -9,7 +9,7 @@ export default function Card({min, max, name, img, onClose, id}) {
       <button className={styles.buttonX} onClick={onClose}>
         X
       </button>
-      <NavLink style={{textDecoration: "none"}} to={`/ciudad/${id}`}>
+      <NavLink style={{textDecoration: "none"}} to={`/city/${id}`}>
         <h5 className={styles.h2}>{name}</h5>
       </NavLink>
       <div className={styles.containerTemp}>

@@ -4,7 +4,7 @@ import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
 import { Route } from 'react-router-dom';
 import About from '../components/About';
-import Ciudad from '../components/Ciudad';
+import City from '../components/City';
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -51,7 +51,7 @@ function App() {
       <Route path='/' render={() => <Nav onSearch={onSearch} />} />
       <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />
       <Route exact path='/about' component={About} />
-      <Route exact path='/ciudad/:ciudadId' render={({ match }) => <Ciudad city={onFilter(match.params.ciudadId)} />} />
+      <Route exact path='/city/:ciudadId' render={({ match }) => <City city={onFilter(match.params.ciudadId)} />} />
       <hr />
     </div>
   );
