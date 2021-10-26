@@ -1,20 +1,22 @@
 import React from "react";
 import SearchBar from "./SearchBar.jsx";
 import "./Nav.css";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 function Nav({onSearch}) {
   return (
     <nav className='navbar navbar-dark bg-dark'>
-      <Link to='/'>
+      <div class='container-fluid'>
         <span className='navbar-brand'>
-          <div>Santi's Weather</div>
+          <NavLink to='/' style={{textDecoration: "none", color: "white"}}>
+            <div>Santi's Weather</div>
+          </NavLink>
         </span>
-      </Link>
-      <Link to='/about'>
-        <span>About</span>
-      </Link>
-      <SearchBar onSearch={onSearch} />
+        <NavLink style={{textDecoration: "none", color: "white"}} to='/about'>
+          <span>About</span>
+        </NavLink>
+        <SearchBar onSearch={onSearch} />
+      </div>
     </nav>
   );
 }
