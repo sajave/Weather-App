@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 function Nav({onSearch}) {
   return (
     <nav className='navbar navbar-dark bg-dark'>
-      <div class='container-fluid'>
+      <div className='container-fluid'>
         <span className='navbar-brand'>
           <NavLink to='/' style={{textDecoration: "none", color: "white"}}>
             <div>Santi's Weather</div>
