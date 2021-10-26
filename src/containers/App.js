@@ -51,6 +51,7 @@ function App() {
     return (
       <div className="App">
         <Route path='/' render={() => <Nav onSearch={onSearch} />} />
+        <Route exact path='/about' component={About} />
         <h2 style={{ color: "grey", justifyContent: 'center', alignItems: 'center' }}>
           Start looking for any city...
         </h2>

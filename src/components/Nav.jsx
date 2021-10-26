@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar.jsx";
 import "./Nav.css";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Nav({onSearch}) {
   return (
