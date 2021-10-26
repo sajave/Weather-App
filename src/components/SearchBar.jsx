@@ -5,7 +5,7 @@ export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
   return (
     <form
-      class='d-flex'
+      className='d-flex'
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(city);
@@ -19,7 +19,7 @@ export default function SearchBar({onSearch}) {
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />
-      <button class='btn btn-primary' type='submit'>
+      <button className='btn btn-primary' type='submit'>
         Search
       </button>
     </form>
