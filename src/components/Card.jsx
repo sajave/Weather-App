@@ -22,7 +22,7 @@ export default function Card({min, max, name, img, onClose, id}) {
         </div>
       </div>
       <img
-        src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
+        src={"https://openweathermap.org/img/wn/" + img + "@2x.png"}
         alt='not found'
       />
     </div>
