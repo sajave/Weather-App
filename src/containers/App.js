@@ -52,7 +52,6 @@ function App() {
       <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />
       <Route exact path='/about' component={About} />
       <Route exact path='/city/:ciudadId' render={({ match }) => <City city={onFilter(match.params.ciudadId)} />} />
-      <hr />
     </div>
   );
 }
