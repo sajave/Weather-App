@@ -1,7 +1,7 @@
 .card {
-  width: 300px;
+  width: 20rem;
   padding: 15px;
-  margin: 20px;
+  /* margin: 20px; */
 
   /* display: flex;
     flex-direction: row; */
@@ -38,6 +38,17 @@
   font-size: 25px;
   font-weight: bold;
   color: rgb(255, 94, 0);
+}
+
+.cityName {
+  font-size: 40px;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 18rem;
+  white-space: nowrap;
 }
 
 .h2 {

@@ -1,6 +1,5 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import Ciudad from "./City";
 import styles from "./Card.module.css";
 
 export default function Card({min, max, name, img, onClose, id}) {
@@ -10,7 +9,7 @@ export default function Card({min, max, name, img, onClose, id}) {
         X
       </button>
       <NavLink style={{textDecoration: "none"}} to={`/city/${id}`}>
-        <h5 className={styles.h2}>{name}</h5>
+        <div className={styles.cityName}>{name}</div>
       </NavLink>
       <div className={styles.containerTemp}>
         <div>
@@ -24,7 +23,7 @@ export default function Card({min, max, name, img, onClose, id}) {
       </div>
       <img
         src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
-        alt='no encontrada'
+        alt='not found'
       />
     </div>
   );
