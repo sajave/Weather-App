@@ -1,9 +1,11 @@
 import React, {useState} from "react";
+import styles from "./SearchBar.module.css";
 
 export default function SearchBar({onSearch}) {
   const [city, setCity] = useState("");
   return (
     <form
+      class='d-flex'
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(city);
@@ -11,12 +13,15 @@ export default function SearchBar({onSearch}) {
       }}
     >
       <input
+        className={styles.input}
         type='text'
-        placeholder='Ciudad...'
+        placeholder='City...'
         value={city}
         onChange={(e) => setCity(e.target.value)}
       />
-      <input type='submit' value='Add' />
+      <button class='btn btn-primary' type='submit'>
+        Search
+      </button>
     </form>
   );
 }
