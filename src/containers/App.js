@@ -46,14 +46,26 @@ function App() {
       return null;
     }
   }
-  return (
-    <div className="App">
-      <Route path='/' render={() => <Nav onSearch={onSearch} />} />
-      <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />
-      <Route exact path='/about' component={About} />
-      <Route exact path='/city/:ciudadId' render={({ match }) => <City city={onFilter(match.params.ciudadId)} />} />
-    </div>
-  );
+
+  if (cities.length === 0) {
+    return (
+      <div className="App">
+        <Route path='/' render={() => <Nav onSearch={onSearch} />} />
+        <h2 style={{ color: "grey", justifyContent: 'center', alignItems: 'center' }}>
+          Start looking for any city...
+        </h2>
+      </div>
+    )
+  } else {
+    return (
+      <div className="App">
+        <Route path='/' render={() => <Nav onSearch={onSearch} />} />
+        <Route exact path='/' render={() => <Cards cities={cities} onClose={onClose} />} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/city/:ciudadId' render={({ match }) => <City city={onFilter(match.params.ciudadId)} />} />
+      </div>
+    );
+  }
 }
 
 export default App;
